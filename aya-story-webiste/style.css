@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: typewriter;
+    src: url('fonts//moms_typewriter/Mom«t___.ttf');
+}
+
+.sidebar {
+    background-color: black;
+    color: white;
+    position: fixed;
+
+    width: 130px;
+    height: 100%;
+    z-index: 1  ;
+}
+
+.sidebar ul {
+    text-align: center;
+    align-items: center;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 30px 20px;
+    font-family: typewriter;
+    font-size: 14px;
+    transition: 1s all;
+}
+
+.sidebar a:hover{
+    background-color: rgb(241, 212, 157);
+    color: black;
+    font-size: 10px;
+}
+
+.content {
+    /* background-color: rgb(230, 202, 151); */
+    background-image: url('/assets/marginalia-paper.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    color: black;
+    width: fit-content;
+    height: 100vh;
+    position: absolute;
+    left: 130px;
+
+    font-family: typewriter;
+    font-size: 12px;
+    padding: 50px 30px;
+    text-align: justify;
+}
+
+
+/* Responsive Css */
+
+@media only screen and (max-width: 450px) {
+
+    .sidebar {
+        width: 110px;;
+    }
+
+    .sidebar a {
+        font-size: 12px;
+    }
+
+    .sidebar a:hover {
+        font-size: 12px;
+    }
+
+    .content {
+        left: 100px;
+        font-size: 13px;
+    }
+}
